@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Proyecto Integrador</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" class="logo1"><img src="./assets/img/codoacodo.png" alt="Logo codo a codo"></a>
+            <h2>Conf Bs.As.</h2>
+        </div>
+        <nav class="navegacion">
+            <div class="btn">
+                <a href="#conferencia">La Conferencia</a>
+            </div>
+            <div class="btn">
+                <a href="#oradores">Los Oradores</a>
+            </div>
+            <div class="btn">    
+                <a href="#lugarFecha">El Lugar y la Fecha</a>
+            </div>
+            <div class="btn">
+                <a href="#conviertete">Conviertete en Orador</a>
+            </div>
+            <div class="btn comprar">
+                <a href="">Comprar Ticktes</a>
+            </div>
+        </nav>
+    </header>        
+        <main>
+        <section class="fondo" id="conferencia">
+            <div class="palacio">
+                <img src="./assets/img/hawaii.jpg" alt="palacio del agua">
+            </div>
+            <div class="titulo">
+                <h1>Conf Bs. As.</h1>   
+                <h4>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento
+                y experiencia de los expertos que están creando el futuro de Internet. <br> Ven a conocer a miembros del
+                evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. <br> Te
+                esperamos!</h4>
+                <button class="btnSec" type="button">Quiero ser orador</button>
+                <button class="btnSec" type="button" id="tickets">Comprar Tickets</button>
+            </div>
+        </section>
+        <section id="oradores" class="sectionOradores">
+            <h2><span>CONOCE A LOS</span><br> ORADORES</h2>
+            <div class="padreCards">
+                <div class="card">
+                    <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs">
+                    <div class="cardBody">
+                        <button class="btnCard" id="js">JavaScript</button>
+                        <button class="btnCard" id="react">React</button>
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem at libero dignissimos quis asperiores nemo quod quibusdam similique harum vitae, ab illum consectetur optio, laborum incidunt aliquid sequi labore consequuntur.
+                            Voluptate nobis asperiores est rem quasi nisi ad ducimus eum cupiditate ut?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/bill.jpg" alt="Imagen de Bill Gates">
+                    <div class="cardBody">
+                        <button class="btnCard" id="js">JavaScript</button>
+                        <button class="btnCard" id="react">React</button>
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem at libero dignissimos quis asperiores nemo quod quibusdam similique harum vitae, ab illum consectetur optio, laborum incidunt aliquid sequi labore consequuntur.
+                        Voluptate nobis asperiores est rem quasi nisi ad ducimus eum cupiditate ut? </p>
+                    </div>
+                </div>    
+                <div class="card">
+                    <img src="./assets/img/ada.jpeg" alt="Imagen de Ada Lovelace">
+                    <div class="cardBody">
+                        <button class="btnCard" id="negocios">Negocios</button>
+                        <button class="btnCard" id="startup">Startups</button>
+                        <h3>Ada Lovelace</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem at libero dignissimos quis asperiores nemo quod quibusdam similique harum vitae, ab illum consectetur optio, laborum incidunt aliquid sequi labore consequuntur.
+                            Voluptate nobis asperiores est rem quasi nisi ad ducimus eum cupiditate ut?</p>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section class="lugarFecha" id="lugarFecha">
+            <img src="./assets/img/honolulu.jpg" alt="Foto de honolulu">
+        <div class="lugarTexto">
+            <h2>Bs As - Octubre</h2>
+            <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600km² de superficie).</p>
+            <button class="btnSec" type="button">Conoce Mas</button>
+        </div>
+        </section>
+        <section id="conviertete">
+            <h2><span>Conviertete en un</span> <br> ORADOR</h2>
+            <h5>Anótate como orador para dar una <a href="#">charla ignite.</a> Cuéntanos de qué quieres hablar!</h5>
+        <form class="formulario">
+            <div class="row">
+            <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+            </div>
+            <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Sobre que quieres hablar?</label>
+            </div>
+                    <h6>Recuerda incluir un título para tu charla</h6>
+            <div class="btnEnviar">
+                    <button class="btnSummit">Enviar</button>
+                    <!-- <button class="btnSummit btnClean" type="reset">Limpiar</button> -->
+            </div>
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="finalPage">
+                <a href="">Preguntas <br> Frecuentes</a>
+                <a href="">Contactanos</a>
+                <a href="">Prensa</a>
+                <a href="">Conferencias</a>
+                <a href="">Terminos y <br> condiciones</a>
+                <a href="">Privacidad</a>
+                <a href="">Estudiantes</a>
+        </div>
+
+    </footer>
+</body>
+</html>

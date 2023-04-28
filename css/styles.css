@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap');
+
+
+:root{
+    --colorTitulo: hsl(0, 0%, 91%);
+    --colorComprar: #29A744;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: #353A40;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo a{
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.logo h2 {
+    color: var(--colorTitulo);
+    font-weight: 300;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    
+}
+
+.logo1 {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.navegacion {
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+    padding: 30px;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #9da6b1;
+    font-size: 21px;
+}
+
+.comprar a {
+    color: var(--colorComprar);
+}
+
+.btn a:hover {
+    color: var(--colorTitulo);
+}
+
+.comprar a:hover {
+    color: var(--colorTitulo);
+}
+
+
+.palacio img {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    filter: brightness(0.3);
+}
+
+.titulo {
+    position: absolute;
+    top: 55vh;
+    left: 40vw;
+    text-align: end;
+    padding-right: 15vh;
+}
+
+.titulo h1 {
+    color: var(--colorTitulo);
+    font-size: 4rem;
+    padding-bottom: 2vh;
+}
+
+.titulo h4 {
+    color: var(--colorTitulo);
+    font-size: 1.5rem;
+    padding-bottom: 2vh;
+    font-weight: 100;
+}
+
+.btnSec {
+    padding: 20px;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    background-color: transparent;    
+    border-radius: 7px;
+    border: 1px solid var(--colorTitulo);
+    color: var(--colorTitulo);
+}
+
+.btnSec:hover {
+    background-color: var(--colorTitulo);
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#tickets {
+    background-color: var(--colorComprar);
+    color: black;
+    border: black;
+}
+
+#tickets:hover {
+    background-color: rgb(29, 65, 38);
+    color: white;
+    border: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sectionOradores h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.sectionOradores span {
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+
+.padreCards{
+    margin-top:50px;
+    text-align: left;
+    width: 80%;
+    height:100vh;
+    margin: 0 auto;
+}
+
+.card{
+    display: inline-block;
+    background-color:white;
+    width:30%;
+    height:75%;
+    border:1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.card img{
+    width:100%;
+    height: 60%;
+    object-fit: cover;
+   
+}
+
+.cardBody{
+    margin:15px;
+}
+
+.btnCard {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+.btnCard#js {
+    background-color: #FEC107;
+    color: black;
+}
+
+.btnCard#react {
+    background-color: #17A2B7;
+}
+
+.btnCard#negocios {
+    background-color: #6B757E;
+}
+
+.btnCard#startup {
+    background-color: #DC3546;
+}
+
+.cardBody h3 {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.cardBody p {
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+.lugarFecha {
+    display: flex;
+    width: 100%;
+}
+
+.lugarFecha img {
+    width: 50%;
+}
+
+.lugarTexto {
+    display: flex;
+    background-color: #333A40;
+    flex-direction: column;
+    width: 50%;
+    padding: 16px;
+}
+
+.lugarTexto p{
+    color: white;
+    line-height: 150%;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.lugarTexto h2 {
+    color: white;
+    line-height: 150%;
+    font-size: 2rem;
+}
+
+.lugarTexto button {
+    text-align: start;
+    margin: 20px 80% 0 0;
+    font-size: 1.5rem;
+    padding: 5px 20px;
+
+}
+
+#conviertete h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#conviertete span {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+#conviertete h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#conviertete a {
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+    color: black;
+
+}
+
+.formulario {
+    display: block;
+    width: 45%;
+    margin: auto;
+    height: 40vh;
+    color: #6B747B;
+
+}
+
+.row {
+    height: 7vh;
+    --bs-gutter-x: 1rem;
+    color: #6B747B;
+}
+
+.row input {
+    font-size: 1.5rem;
+}
+
+.col input {
+    color: #0479d3;
+}
+
+#floatingTextarea {
+    height: 200px;
+}
+
+.btnEnviar {
+    display: flex;
+}
+
+.btnSummit {
+    width: 100%;
+    background-color: #96C93E;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+    margin: 5px;
+}
+
+.btnSummit:hover {
+    background-color: rgb(29, 65, 38);
+    color: white;
+    border: black;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.formulario h6 {
+    margin: 5px;
+}
+
+.btnClean {
+    width: 20%;
+    background-color: rgb(179, 0, 0);
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+}
+
+.finalPage {
+    background: #1c3643;
+    background: linear-gradient(90deg,#1c3643 0%, #1e5372 80%);
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    align-items: center;
+    margin: 0 20px 0 2px0;
+}
+
+.finalPage a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+
