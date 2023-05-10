@@ -54,7 +54,10 @@ nav {
 
 .carousel-item {
     filter: brightness(0.3);
-    z-index: -1;
+    /* z-index: -1; */
+}
+.carousel.pointer-event{
+    z-index: 0;
 }
 
 .titulo {
@@ -117,6 +120,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
 .card{
@@ -130,6 +134,32 @@ nav {
     border: 1px;
 }
 
+/* #lugarFecha {
+    height: 60vh;
+} */
+
+.lugarFecha{
+    background-image: url(../assets/img/honolulu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    height: 60vh;
+}
+
+.lugarTexto {
+    background-color: var(--colorsecundario);
+    border: 1px solid white;
+    color: var(--colorTitulo);
+    padding: 35px;
+}
+
+.btnConoce {
+    padding: 10px;
+    margin-left: 0;
+}
+
+
 @media only screen and (max-width: 768px) {
 
     .navbar{
@@ -137,11 +167,54 @@ nav {
     }
 
     .navbar-expand-lg .navbar-collapse {
-        background-color: var(--colorTitulo);
+        background-color: #353A40;
+        text-align: center;
     }
 
 }
 
 @media only screen and (max-width: 1200px){
+    .padreCard {
+        flex-direction: column;
+    }
 
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .padreCard p {
+        white-space: nowrap;
+        overflow: scroll;
+    }
+    .titulo {
+        position: initial;
+        background-color: #353A40;
+        text-align: center;
+        padding: initial;
+    }
+
+    .titulo h4 {
+        margin: 20px;
+    }
+
+    #navbarNav {
+        z-index: 1;
+    }
+
+    .btnTitulo {
+        display: flex;
+        padding: 20px;
+    }
+
+    .btnSec {
+        padding: initial;
+        margin-left: 15px;
+    }
+    .lugarFecha {
+        height: 100vh;
+    }
+
+    .lugarTexto {
+        overflow: scroll;
+    }
 }
