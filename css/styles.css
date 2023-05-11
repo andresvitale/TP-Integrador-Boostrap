@@ -54,9 +54,9 @@ nav {
 
 .carousel-item {
     filter: brightness(0.3);
-    /* z-index: -1; */
 }
-.carousel.pointer-event{
+.carousel-control-next {
+    right: 0;
     z-index: 0;
 }
 
@@ -118,25 +118,64 @@ nav {
 
 .padreCard{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: stretch;
+    justify-content: space-evenly ;
     margin-bottom: 50px;
+    width: 65vw;
 }
 
 .card{
-    width: 18rem;
+    width: 20rem;
+
 }
 
 .btn {
-    height: 4vh;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 5px;
     border: 1px;
 }
 
-/* #lugarFecha {
+.lugarFecha {
+    display: flex;
+    width: 100%;
+}
+
+.lugarFecha img {
+    width: 50%;
+}
+
+.lugarTexto {
+    display: flex;
+    background-color: #333A40;
+    flex-direction: column;
+    width: 50%;
+    padding: 16px;
+}
+
+.lugarTexto p{
+    color: white;
+    line-height: 150%;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.lugarTexto h2 {
+    color: white;
+    line-height: 150%;
+    font-size: 2rem;
+}
+
+.lugarTexto button {
+    text-align: center;
+    margin: 2vh 35vw 0 0;
+    font-size: 1.5rem;
+    padding: 5px 20px;
+
+}
+
+/* .padreLugar {
     height: 60vh;
-} */
+}
 
 .lugarFecha{
     background-image: url(../assets/img/honolulu.jpg);
@@ -157,8 +196,112 @@ nav {
 .btnConoce {
     padding: 10px;
     margin-left: 0;
+} */
+
+#conviertete h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 2rem;
 }
 
+#conviertete span {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+#conviertete h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#conviertete a {
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+    color: black;
+
+}
+
+.formulario {
+    display: block;
+    width: 45%;
+    margin: auto;
+    height: 40vh;
+    color: #6B747B;
+
+}
+
+.row {
+    height: 7vh;
+    --bs-gutter-x: 1rem;
+    color: #6B747B;
+}
+
+.row input {
+    font-size: 1.5rem;
+}
+
+.col input {
+    color: #0479d3;
+}
+
+#floatingTextarea {
+    height: 200px;
+}
+
+.btnEnviar {
+    display: flex;
+}
+
+.btnSummit {
+    width: 100%;
+    background-color: #96C93E;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+    margin: 5px;
+}
+
+.btnSummit:hover {
+    background-color: rgb(29, 65, 38);
+    color: white;
+    border: black;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.formulario h6 {
+    margin: 5px;
+}
+
+.btnClean {
+    width: 25%;
+    background-color: rgb(179, 0, 0);
+}
+
+footer {
+    width: 100%;
+}
+
+.finalPage {
+    background: linear-gradient(90deg,#1c3643 0%, #1e5372 80%);
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    align-items: center;
+}
+
+.finalPage a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -170,12 +313,30 @@ nav {
         background-color: #353A40;
         text-align: center;
     }
+    
+    .lugarTexto button {
+        margin: 2vh 0 0 0
+    } 
+
+    .lugarFecha img {
+        width: auto;
+    }
+
+    .lugarTexto {
+        width: auto;
+    }
 
 }
 
 @media only screen and (max-width: 1200px){
+
+    .navbar{
+        position: initial;
+    }
+
     .padreCard {
         flex-direction: column;
+        align-items: center;
     }
 
     .card {
@@ -204,17 +365,63 @@ nav {
     .btnTitulo {
         display: flex;
         padding: 20px;
+        flex-direction: column;
     }
 
     .btnSec {
         padding: initial;
-        margin-left: 15px;
+        margin-top: 15px;
+        margin-left: 5px;
+
     }
+
     .lugarFecha {
-        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .lugarFecha img {
+        width: auto;
     }
 
     .lugarTexto {
-        overflow: scroll;
+        width: auto;
+    }
+
+    .formulario {
+        width: 90%;
+    }
+
+    #conviertete {
+        height: 65vh;
+    }
+
+    .finalPage {
+        flex-direction: column;
+    }
+}   
+
+@media only screen and (max-width: 1024px){
+    .lugarTexto button  {
+        margin: 2vh 0 0 0;
+    }
+
+    .lugarTexto p {
+        font-size: 1.5rem;
+    }
+  
+}
+
+@media only screen and (max-width: 1400px){
+    .titulo {
+        top: 55vh;
+    }
+
+    #conviertete {
+        height: 65vh;
+    }
+
+    .padreCard {
+        width: auto;
     }
 }
