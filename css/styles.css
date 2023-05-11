@@ -54,7 +54,6 @@ nav {
 
 .carousel-item {
     filter: brightness(0.3);
-    /* z-index: -1; */
 }
 .carousel-control-next {
     right: 0;
@@ -131,13 +130,50 @@ nav {
 }
 
 .btn {
-    height: 4vh;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 5px;
     border: 1px;
 }
 
-.padreLugar {
+.lugarFecha {
+    display: flex;
+    width: 100%;
+}
+
+.lugarFecha img {
+    width: 50%;
+}
+
+.lugarTexto {
+    display: flex;
+    background-color: #333A40;
+    flex-direction: column;
+    width: 50%;
+    padding: 16px;
+}
+
+.lugarTexto p{
+    color: white;
+    line-height: 150%;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.lugarTexto h2 {
+    color: white;
+    line-height: 150%;
+    font-size: 2rem;
+}
+
+.lugarTexto button {
+    text-align: center;
+    margin: 2vh 35vw 0 0;
+    font-size: 1.5rem;
+    padding: 5px 20px;
+
+}
+
+/* .padreLugar {
     height: 60vh;
 }
 
@@ -160,7 +196,7 @@ nav {
 .btnConoce {
     padding: 10px;
     margin-left: 0;
-}
+} */
 
 #conviertete h2 {
     text-align: center;
@@ -267,7 +303,7 @@ footer {
     font-size: 1rem;
 }
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     .navbar{
         position: initial;
@@ -277,8 +313,20 @@ footer {
         background-color: #353A40;
         text-align: center;
     }
+    
+    .lugarTexto button {
+        margin: 2vh 0 0 0
+    } 
 
-} */
+    .lugarFecha img {
+        width: auto;
+    }
+
+    .lugarTexto {
+        width: auto;
+    }
+
+}
 
 @media only screen and (max-width: 1200px){
 
@@ -317,32 +365,63 @@ footer {
     .btnTitulo {
         display: flex;
         padding: 20px;
+        flex-direction: column;
     }
 
     .btnSec {
         padding: initial;
-        margin-left: 15px;
-    }
+        margin-top: 15px;
+        margin-left: 5px;
 
-    .padreLugar {
-        display: flex;
-        height: 100vh;
     }
 
     .lugarFecha {
-        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .lugarFecha img {
+        width: auto;
     }
 
     .lugarTexto {
-        overflow: scroll;
-        padding: 34px;
+        width: auto;
     }
 
     .formulario {
         width: 90%;
     }
 
+    #conviertete {
+        height: 65vh;
+    }
+
     .finalPage {
         flex-direction: column;
     }
 }   
+
+@media only screen and (max-width: 1024px){
+    .lugarTexto button  {
+        margin: 2vh 0 0 0;
+    }
+
+    .lugarTexto p {
+        font-size: 1.5rem;
+    }
+  
+}
+
+@media only screen and (max-width: 1400px){
+    .titulo {
+        top: 55vh;
+    }
+
+    #conviertete {
+        height: 65vh;
+    }
+
+    .padreCard {
+        width: auto;
+    }
+}
