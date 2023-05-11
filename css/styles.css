@@ -56,7 +56,8 @@ nav {
     filter: brightness(0.3);
     /* z-index: -1; */
 }
-.carousel.pointer-event{
+.carousel-control-next {
+    right: 0;
     z-index: 0;
 }
 
@@ -118,13 +119,15 @@ nav {
 
 .padreCard{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: stretch;
+    justify-content: space-evenly ;
     margin-bottom: 50px;
+    width: 65vw;
 }
 
 .card{
-    width: 18rem;
+    width: 20rem;
+
 }
 
 .btn {
@@ -134,9 +137,9 @@ nav {
     border: 1px;
 }
 
-/* #lugarFecha {
+.padreLugar {
     height: 60vh;
-} */
+}
 
 .lugarFecha{
     background-image: url(../assets/img/honolulu.jpg);
@@ -159,8 +162,112 @@ nav {
     margin-left: 0;
 }
 
+#conviertete h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 2rem;
+}
 
-@media only screen and (max-width: 768px) {
+#conviertete span {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+#conviertete h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#conviertete a {
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+    color: black;
+
+}
+
+.formulario {
+    display: block;
+    width: 45%;
+    margin: auto;
+    height: 40vh;
+    color: #6B747B;
+
+}
+
+.row {
+    height: 7vh;
+    --bs-gutter-x: 1rem;
+    color: #6B747B;
+}
+
+.row input {
+    font-size: 1.5rem;
+}
+
+.col input {
+    color: #0479d3;
+}
+
+#floatingTextarea {
+    height: 200px;
+}
+
+.btnEnviar {
+    display: flex;
+}
+
+.btnSummit {
+    width: 100%;
+    background-color: #96C93E;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+    margin: 5px;
+}
+
+.btnSummit:hover {
+    background-color: rgb(29, 65, 38);
+    color: white;
+    border: black;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.formulario h6 {
+    margin: 5px;
+}
+
+.btnClean {
+    width: 25%;
+    background-color: rgb(179, 0, 0);
+}
+
+footer {
+    width: 100%;
+}
+
+.finalPage {
+    background: linear-gradient(90deg,#1c3643 0%, #1e5372 80%);
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    align-items: center;
+}
+
+.finalPage a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* @media only screen and (max-width: 768px) {
 
     .navbar{
         position: initial;
@@ -171,11 +278,17 @@ nav {
         text-align: center;
     }
 
-}
+} */
 
 @media only screen and (max-width: 1200px){
+
+    .navbar{
+        position: initial;
+    }
+
     .padreCard {
         flex-direction: column;
+        align-items: center;
     }
 
     .card {
@@ -210,11 +323,26 @@ nav {
         padding: initial;
         margin-left: 15px;
     }
+
+    .padreLugar {
+        display: flex;
+        height: 100vh;
+    }
+
     .lugarFecha {
         height: 100vh;
     }
 
     .lugarTexto {
         overflow: scroll;
+        padding: 34px;
     }
-}
+
+    .formulario {
+        width: 90%;
+    }
+
+    .finalPage {
+        flex-direction: column;
+    }
+}   
