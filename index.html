@@ -20,19 +20,19 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">La Conferencia</a>
+                    <a class="nav-link" href="#conferencia">La Conferencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Los Oradores</a>
+                    <a class="nav-link" href="#oradores">Los Oradores</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">El Lugar y la Fecha</a>
+                    <a class="nav-link" href="#lugarFecha">El Lugar y la Fecha</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Conviertete en Orador</a>
+                    <a class="nav-link" href="#conviertete">Conviertete en Orador</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link comprar" href="#">Comprar Ticktes</a>
+                    <a class="nav-link comprar" href="compra.html">Comprar Ticktes</a>
                   </li>
                 </ul>
               </div>
@@ -69,8 +69,8 @@
                 evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. <br> Te
                 esperamos!</h4>
                 <div class="btnTitulo container-fluid">
-                <button class="btnSec" type="button">Quiero ser orador</button>
-                <button class="btnSec" type="button" id="tickets">Comprar Tickets</button>
+                <a href="#conviertete"><button class="btnSec" type="button">Quiero ser orador</button></a>
+                <a href="./compra.html"><button class="btnSec" type="button" id="tickets">Comprar Tickets</button></a>
               </div>  
               </div>
 
@@ -127,7 +127,7 @@
             </div>
             </div>      
           </section> -->
-        <section id="conviertete">
+        <section class="container-fluid" id="conviertete">
             <h2><span>Conviertete en un</span> <br> ORADOR</h2>
             <h5>Anótate como orador para dar una <a href="#">charla ignite.</a> Cuéntanos de qué quieres hablar!</h5>
         <form class="formulario">
@@ -146,7 +146,7 @@
                     <h6>Recuerda incluir un título para tu charla</h6>
             <div class="btnEnviar">
                     <button class="btnSummit">Enviar</button>
-                    <button class="btnSummit btnClean" type="reset">Limpiar</button>
+                    <!-- <button class="btnSummit btnClean" type="reset">Limpiar</button> -->
             </div>
           </form>
         </section>
@@ -162,8 +162,7 @@
                 <a href="">Privacidad</a>
                 <a href="">Estudiantes</a>
         </div>
-
-    </footer>
+        </footer>
     <script src="./js/bootstrap.js"></script>
 </body>
 </html>
