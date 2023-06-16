@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+main {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -103,7 +107,7 @@ nav {
     background-color: rgb(29, 65, 38);
     color: white;
     border: black;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -204,13 +208,13 @@ nav {
 
 #conviertete h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5vh;
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 2rem;
 }
 
-#conviertete span {
+#conviertete #ventaTitulo {
     font-weight: 300;
     font-size: 1rem;
 }
@@ -244,7 +248,24 @@ nav {
     color: #6B747B;
 }
 
+.carrito {
+    height: 45vh;
+    --bs-gutter-x: 1rem;
+    color: #6B747B;
+}
+
+.grupo-tickets {
+    margin-top: 50px;
+    height: 20vh;
+    --bs-gutter-x: 1rem;
+    color: #6B747B;
+}
+
 .row input {
+    font-size: 1.5rem;
+}
+
+.compra select {
     font-size: 1.5rem;
 }
 
@@ -258,6 +279,7 @@ nav {
 
 .btnEnviar {
     display: flex;
+    gap: 20px;
 }
 
 .btnSummit {
@@ -268,6 +290,18 @@ nav {
     border-radius: 5px;
     font-size: 1.5rem;
     color: white;
+
+}
+
+.btnTickets{
+    width: 50%;
+    background-color: #96C93E;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: white;
+
 }
 
 .btnSummit:hover {
@@ -283,7 +317,7 @@ nav {
 }
 
 .btnClean {
-    width: 25%;
+    width: 50%;
     background-color: rgb(179, 0, 0);
 }
 
@@ -293,7 +327,7 @@ footer {
 
 .finalPage {
     background: linear-gradient(90deg,#1c3643 0%, #1e5372 80%);
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: space-evenly;
     padding: 25px;
@@ -308,6 +342,26 @@ footer {
 
 /* CSS PAGINA COMPRA */
 
+.compra {
+    height: 22vh;
+}
+
+#precio span{
+    gap: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.mb-4 {
+    font-size: 1.5rem;
+}
+
+#totalPago span{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
 .formVenta {
     height: 60vh;
 }
@@ -315,6 +369,7 @@ footer {
 .compra {
     height: 25vh;
 }
+
 
 
 @media only screen and (max-width: 768px) {

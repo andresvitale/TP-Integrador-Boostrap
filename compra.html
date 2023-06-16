@@ -1,3 +1,140 @@
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Proyecto Integrador</title>
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+              <a href="index.html" class="logo1"><img src="./assets/img/codoacodo.png" alt="Logo codo a codo"></a>
+              <h2>Conf Bs.As.</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#conferencia">La Conferencia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#oradores">Los Oradores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#lugarFecha">El Lugar y la Fecha</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#conviertete">Conviertete en Orador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link comprar" href="compra.html">Comprar Ticktes</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+  <main>
+      <div class="container grupo-tickets">
+          <div class="row row-group d-flex justify-content-center align-items-center g-1">
+              <div class="col-3">
+                  <div class="card mb-4 rounded-3 shadow-sm border-primary text-xl-center">
+                      <div class="card-header py-3 text-white bg-primary border-primary">
+                          <h4 class="my-0 fw-normal">Estudiante</h4>
+                      </div>
+                      <div class="card-body">
+                          <p>Tienen un descuento</p>
+                          <h3 class="card-title pricing-card-title">80%</h3>
+                          <small class="fw-light text-muted mt-3">* Presentar documentación</small>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-3">
+                  <div class="card mb-4 rounded-3 shadow-sm border-info text-xl-center">
+                      <div class="card-header py-3 text-white bg-info border-info">
+                          <h4 class="my-0 fw-normal">Trainee</h4>
+                      </div>
+                      <div class="card-body">
+                          <p>Tienen un descuento</p>
+                          <h3 class="card-title pricing-card-title">50%</h3>
+                          <small class="fw-light text-muted mt-3">* Presentar documentación</small>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-3">
+                  <div class="card mb-4 rounded-3 shadow-sm border-warning text-xl-center">
+                      <div class="card-header py-3 text-white bg-warning border-warning">
+                          <h4 class="my-0 fw-normal">Junior</h4>
+                      </div>
+                      <div class="card-body">
+                          <p>Tienen un descuento</p>
+                          <h3 class="card-title pricing-card-title">15%</h3>
+                          <small class="fw-light text-muted mt-3">* Presentar documentación</small>
+                      </div>
+                  </div>
+              </div>
+          </div>    
+      </div>
+
+<section class="container-fluid" id="conviertete">
+<h2><span id="ventaTitulo">Venta</span> <br> Valor del ticket $200</h2>
+<form class="formulario">
+<div class="row compra">
+<div class="col">
+        <input type="text" class="form-control" placeholder="Nombre" id="nombre">
+</div>
+<div class="col">
+        <input type="text" class="form-control" placeholder="Apellido" id="apellido" required>
+</div>
+<div class="form">
+  <input type="email" class="form-control" placeholder="Correo" id="mail" required>
+</div>
+<div class="col">
+<label for="">Cantidad</label>
+<input type="text" class="form-control" placeholder="Cantidad" id="cantidadTickets" required>
+</div>
+<div class="col">
+  <label for="categoriaSelect">Categoría</label>
+  <select class="form-select" aria-label="Categoría" id="categoriaSelect">
+      <option value="" selected=""> Seleccione </option>
+      <option value="0">Sin Categoria</option>
+      <option value="1">Estudiante</option>
+      <option value="2">Trainee</option>
+      <option value="3">Junior</option>
+  </select>
+  <div class="invalid-feedback" id="mensajeErrorCategoria">
+      <p>Ingrese una categoria</p>
+  </div>
+</div>
+</div>
+<div class="alert alert-primary mt-2 mb-4" id="" role="alert">
+  Total a pagar: $ <span id="totalPago" class="align-middle mb-4"></span>
+</div>
+<div class="btnEnviar">
+        <button type="reset" class="btnTickets" id="btnReset">Borrar</button>
+        <button type="button" class="btnTickets" id="btnSumit">Resumen</button>
+</div>
+</form>
+</section>
+</main>
+  <footer>
+      <div class="finalPage">
+              <a href="">Preguntas <br> Frecuentes</a>
+              <a href="">Contactanos</a>
+              <a href="">Prensa</a>
+              <a href="">Conferencias</a>
+              <a href="">Terminos y <br> condiciones</a>
+              <a href="">Privacidad</a>
+              <a href="">Estudiantes</a>
+      </div>
+  </footer>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/compra.js"></script>
+=======
 <!DOCTYPE html>
 <html lang="es">
 <head>
