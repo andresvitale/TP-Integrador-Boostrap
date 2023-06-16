@@ -81,26 +81,26 @@
       </div>
 
 <section class="container-fluid" id="conviertete">
-<h2><span>Venta</span> <br> Valor del ticket $200</h2>
-<form class="formulario formVenta">
+<h2><span id="ventaTitulo">Venta</span> <br> Valor del ticket $200</h2>
+<form class="formulario">
 <div class="row compra">
 <div class="col">
-        <input type="text" class="form-control" placeholder="Nombre">
+        <input type="text" class="form-control" placeholder="Nombre" id="nombre">
 </div>
 <div class="col">
-        <input type="text" class="form-control" placeholder="Apellido">
+        <input type="text" class="form-control" placeholder="Apellido" id="apellido" required>
 </div>
 <div class="form">
-  <input type="email" class="form-control" placeholder="Correo">
+  <input type="email" class="form-control" placeholder="Correo" id="mail" required>
 </div>
 <div class="col">
 <label for="">Cantidad</label>
-<input type="text" class="form-control" placeholder="Cantidad">
+<input type="text" class="form-control" placeholder="Cantidad" id="cantidadTickets" required>
 </div>
 <div class="col">
   <label for="categoriaSelect">Categoría</label>
   <select class="form-select" aria-label="Categoría" id="categoriaSelect">
-      <option value="" selected="">-- Seleccione </option>
+      <option value="" selected=""> Seleccione </option>
       <option value="0">Sin Categoria</option>
       <option value="1">Estudiante</option>
       <option value="2">Trainee</option>
@@ -111,12 +111,12 @@
   </div>
 </div>
 </div>
-<div class="alert alert-primary mt-2 mb-4" role="alert">
-  Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+<div class="alert alert-primary mt-2 mb-4" id="" role="alert">
+  Total a pagar: $ <span id="totalPago" class="align-middle mb-4"></span>
 </div>
 <div class="btnEnviar">
-        <button class="btnTickets">Enviar</button>
-        <button class="btnTickets" type="reset">Limpiar</button>
+        <button type="reset" class="btnTickets" id="btnReset">Borrar</button>
+        <button type="button" class="btnTickets" id="btnSumit">Resumen</button>
 </div>
 </form>
 </section>
@@ -133,5 +133,6 @@
       </div>
   </footer>
   <script src="./js/bootstrap.js"></script>
+  <script src="./js/compra.js"></script>
 </body>
 </html>

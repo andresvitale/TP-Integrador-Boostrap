@@ -214,7 +214,7 @@ nav {
     font-size: 2rem;
 }
 
-#conviertete span {
+#conviertete #ventaTitulo {
     font-weight: 300;
     font-size: 1rem;
 }
@@ -343,6 +343,20 @@ footer {
     height: 22vh;
 }
 
+#precio span{
+    gap: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.mb-4 {
+    font-size: 1.5rem;
+}
+
+#totalPago span{
+    font-size: 2rem;
+    font-weight: 700;
+}
 
 @media only screen and (max-width: 768px) {
 
